@@ -161,13 +161,6 @@
    ],
    "source": [
     "!pip install wordcloud"
-   "execution_count": null,
-   "metadata": {},
-   "outputs": [],
-   "source": [
-    "# Install necessary packages\n",
-    "# !pip install comet_ml"
-
    ]
   },
   {
@@ -198,18 +191,13 @@
   },
   {
    "cell_type": "code",
-<<<<<<< HEAD:.ipynb_checkpoints/Team_RM1_Classification_Predict_Notebook-checkpoint.ipynb
-   "execution_count": 2,
-=======
-
    "execution_count": 13,
->>>>>>> cec1f20ae8c0e61fba4d578376f14c5e786d66ee:Team_1RM_Classification_Predict_Notebook.ipynb
    "metadata": {},
    "outputs": [],
    "source": [
     "import numpy as np\n",
     "import pandas as pd\n",
-<<<<<<< HEAD:.ipynb_checkpoints/Team_RM1_Classification_Predict_Notebook-checkpoint.ipynb
+<<<<<<< HEAD:Team_RM1_Classification_Predict_Notebook.ipynb
     "import string\n",
     "import re\n",
     "from sklearn.model_selection import train_test_split\n",
@@ -220,7 +208,7 @@
     "from sklearn.tree import DecisionTreeClassifier\n",
     "from sklearn.preprocessing import StandardScaler\n",
     "from sklearn.metrics import f1_score, precision_score, recall_score, confusion_matrix\n",
->>>>>>> cec1f20ae8c0e61fba4d578376f14c5e786d66ee:Team_1RM_Classification_Predict_Notebook.ipynb
+>>>>>>> cec1f20ae8c0e61fba4d578376f14c5e786d66ee:.ipynb_checkpoints/Team_1RM_Classification_Predict_Notebook-checkpoint.ipynb
     "from nltk import word_tokenize\n",
     "from sklearn.feature_extraction.text import TfidfVectorizer\n",
     "from sklearn.naive_bayes import MultinomialNB\n",
@@ -284,12 +272,6 @@
     "#For reporting accuracy\n",
     "from sklearn.metrics import accuracy_score,classification_report,confusion_matrix"
    ]
-
-   "execution_count": null,
-   "metadata": {},
-   "outputs": [],
-   "source": []
-
   },
   {
    "cell_type": "markdown",
@@ -300,12 +282,7 @@
   },
   {
    "cell_type": "code",
-<<<<<<< HEAD:.ipynb_checkpoints/Team_RM1_Classification_Predict_Notebook-checkpoint.ipynb
-   "execution_count": 8,
-=======
-
    "execution_count": 10,
->>>>>>> cec1f20ae8c0e61fba4d578376f14c5e786d66ee:Team_1RM_Classification_Predict_Notebook.ipynb
    "metadata": {},
    "outputs": [],
    "source": [
@@ -315,11 +292,11 @@
   },
   {
    "cell_type": "code",
-<<<<<<< HEAD:.ipynb_checkpoints/Team_RM1_Classification_Predict_Notebook-checkpoint.ipynb
-   "execution_count": 9,
+<<<<<<< HEAD:Team_RM1_Classification_Predict_Notebook.ipynb
+   "execution_count": 3,
 =======
    "execution_count": 11,
->>>>>>> cec1f20ae8c0e61fba4d578376f14c5e786d66ee:Team_1RM_Classification_Predict_Notebook.ipynb
+>>>>>>> cec1f20ae8c0e61fba4d578376f14c5e786d66ee:.ipynb_checkpoints/Team_1RM_Classification_Predict_Notebook-checkpoint.ipynb
    "metadata": {},
    "outputs": [
     {
@@ -392,32 +369,32 @@
        "466954           1  RT @SoyNovioDeTodas: It's 2016, and a racist, ..."
       ]
      },
-<<<<<<< HEAD:.ipynb_checkpoints/Team_RM1_Classification_Predict_Notebook-checkpoint.ipynb
-     "execution_count": 9,
+<<<<<<< HEAD:Team_RM1_Classification_Predict_Notebook.ipynb
+     "execution_count": 3,
 =======
      "execution_count": 11,
->>>>>>> cec1f20ae8c0e61fba4d578376f14c5e786d66ee:Team_1RM_Classification_Predict_Notebook.ipynb
+>>>>>>> cec1f20ae8c0e61fba4d578376f14c5e786d66ee:.ipynb_checkpoints/Team_1RM_Classification_Predict_Notebook-checkpoint.ipynb
      "metadata": {},
      "output_type": "execute_result"
     }
    ],
    "source": [
-<<<<<<< HEAD:.ipynb_checkpoints/Team_RM1_Classification_Predict_Notebook-checkpoint.ipynb
+<<<<<<< HEAD:Team_RM1_Classification_Predict_Notebook.ipynb
     "df_train.set_index('tweetid',inplace = True)\n",
     "df_train.head()"
 =======
     "train_df.set_index('tweetid',inplace = True)\n",
     "train_df.head()"
->>>>>>> cec1f20ae8c0e61fba4d578376f14c5e786d66ee:Team_1RM_Classification_Predict_Notebook.ipynb
+>>>>>>> cec1f20ae8c0e61fba4d578376f14c5e786d66ee:.ipynb_checkpoints/Team_1RM_Classification_Predict_Notebook-checkpoint.ipynb
    ]
   },
   {
    "cell_type": "code",
-<<<<<<< HEAD:.ipynb_checkpoints/Team_RM1_Classification_Predict_Notebook-checkpoint.ipynb
-   "execution_count": 10,
+<<<<<<< HEAD:Team_RM1_Classification_Predict_Notebook.ipynb
+   "execution_count": 4,
 =======
    "execution_count": 12,
->>>>>>> cec1f20ae8c0e61fba4d578376f14c5e786d66ee:Team_1RM_Classification_Predict_Notebook.ipynb
+>>>>>>> cec1f20ae8c0e61fba4d578376f14c5e786d66ee:.ipynb_checkpoints/Team_1RM_Classification_Predict_Notebook-checkpoint.ipynb
    "metadata": {},
    "outputs": [
     {
@@ -483,30 +460,24 @@
        "872928   RT @FakeWillMoore: 'Female orgasms cause globa..."
       ]
      },
-<<<<<<< HEAD:.ipynb_checkpoints/Team_RM1_Classification_Predict_Notebook-checkpoint.ipynb
-     "execution_count": 10,
+<<<<<<< HEAD:Team_RM1_Classification_Predict_Notebook.ipynb
+     "execution_count": 4,
 =======
      "execution_count": 12,
->>>>>>> cec1f20ae8c0e61fba4d578376f14c5e786d66ee:Team_1RM_Classification_Predict_Notebook.ipynb
+>>>>>>> cec1f20ae8c0e61fba4d578376f14c5e786d66ee:.ipynb_checkpoints/Team_1RM_Classification_Predict_Notebook-checkpoint.ipynb
      "metadata": {},
      "output_type": "execute_result"
     }
    ],
    "source": [
-<<<<<<< HEAD:.ipynb_checkpoints/Team_RM1_Classification_Predict_Notebook-checkpoint.ipynb
+<<<<<<< HEAD:Team_RM1_Classification_Predict_Notebook.ipynb
     "df_test.set_index('tweetid',inplace = True)\n",
     "df_test.head()"
 =======
     "test_df.set_index('tweetid',inplace = True)\n",
     "test_df.head()"
->>>>>>> cec1f20ae8c0e61fba4d578376f14c5e786d66ee:Team_1RM_Classification_Predict_Notebook.ipynb
+>>>>>>> cec1f20ae8c0e61fba4d578376f14c5e786d66ee:.ipynb_checkpoints/Team_1RM_Classification_Predict_Notebook-checkpoint.ipynb
    ]
-
-   "execution_count": null,
-   "metadata": {},
-   "outputs": [],
-   "source": []
-
   },
   {
    "cell_type": "markdown",
@@ -526,16 +497,11 @@
     "# look at the y variable, the number of classes it has. \n",
     "# check for imbalance of data in the different classes of y variable. \n",
     "# check for missing values.\n",
-
     "# visualise the data."
-
-    "# visualise the data.\n"
-
    ]
   },
   {
    "cell_type": "code",
-
    "execution_count": 14,
    "metadata": {},
    "outputs": [
@@ -803,7 +769,6 @@
   },
   {
    "cell_type": "code",
-
    "execution_count": null,
    "metadata": {},
    "outputs": [],
@@ -839,28 +804,119 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 11,
+   "execution_count": 12,
    "metadata": {},
    "outputs": [
     {
      "data": {
+      "text/html": [
+       "<div>\n",
+       "<style scoped>\n",
+       "    .dataframe tbody tr th:only-of-type {\n",
+       "        vertical-align: middle;\n",
+       "    }\n",
+       "\n",
+       "    .dataframe tbody tr th {\n",
+       "        vertical-align: top;\n",
+       "    }\n",
+       "\n",
+       "    .dataframe thead th {\n",
+       "        text-align: right;\n",
+       "    }\n",
+       "</style>\n",
+       "<table border=\"1\" class=\"dataframe\">\n",
+       "  <thead>\n",
+       "    <tr style=\"text-align: right;\">\n",
+       "      <th></th>\n",
+       "      <th>sentiment</th>\n",
+       "      <th>message</th>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>tweetid</th>\n",
+       "      <th></th>\n",
+       "      <th></th>\n",
+       "    </tr>\n",
+       "  </thead>\n",
+       "  <tbody>\n",
+       "    <tr>\n",
+       "      <th>625221</th>\n",
+       "      <td>1</td>\n",
+       "      <td>polyscimajor epa chief doesn't think carbon di...</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>126103</th>\n",
+       "      <td>1</td>\n",
+       "      <td>it's not like we lack evidence of anthropogeni...</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>698562</th>\n",
+       "      <td>2</td>\n",
+       "      <td>rt @rawstory: researchers say we have three ye...</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>573736</th>\n",
+       "      <td>1</td>\n",
+       "      <td>#todayinmaker# wired : 2016 was a pivotal year...</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>466954</th>\n",
+       "      <td>1</td>\n",
+       "      <td>rt @soynoviodetodas: it's 2016, and a racist, ...</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>...</th>\n",
+       "      <td>...</td>\n",
+       "      <td>...</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>22001</th>\n",
+       "      <td>1</td>\n",
+       "      <td>rt @ezlusztig: they took down the material on ...</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>17856</th>\n",
+       "      <td>2</td>\n",
+       "      <td>rt @washingtonpost: how climate change could b...</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>384248</th>\n",
+       "      <td>0</td>\n",
+       "      <td>notiven: rt: nytimesworld :what does trump act...</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>819732</th>\n",
+       "      <td>-1</td>\n",
+       "      <td>rt @sara8smiles: hey liberals the climate chan...</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>806319</th>\n",
+       "      <td>0</td>\n",
+       "      <td>rt @chet_cannon: .@kurteichenwald's 'climate c...</td>\n",
+       "    </tr>\n",
+       "  </tbody>\n",
+       "</table>\n",
+       "<p>15819 rows × 2 columns</p>\n",
+       "</div>"
+      ],
       "text/plain": [
-       "tweetid\n",
-       "625221    polyscimajor epa chief doesn't think carbon di...\n",
-       "126103    it's not like we lack evidence of anthropogeni...\n",
-       "698562    rt @rawstory: researchers say we have three ye...\n",
-       "573736    #todayinmaker# wired : 2016 was a pivotal year...\n",
-       "466954    rt @soynoviodetodas: it's 2016, and a racist, ...\n",
-       "                                ...                        \n",
-       "22001     rt @ezlusztig: they took down the material on ...\n",
-       "17856     rt @washingtonpost: how climate change could b...\n",
-       "384248    notiven: rt: nytimesworld :what does trump act...\n",
-       "819732    rt @sara8smiles: hey liberals the climate chan...\n",
-       "806319    rt @chet_cannon: .@kurteichenwald's 'climate c...\n",
-       "Name: message, Length: 15819, dtype: object"
+       "         sentiment                                            message\n",
+       "tweetid                                                              \n",
+       "625221           1  polyscimajor epa chief doesn't think carbon di...\n",
+       "126103           1  it's not like we lack evidence of anthropogeni...\n",
+       "698562           2  rt @rawstory: researchers say we have three ye...\n",
+       "573736           1  #todayinmaker# wired : 2016 was a pivotal year...\n",
+       "466954           1  rt @soynoviodetodas: it's 2016, and a racist, ...\n",
+       "...            ...                                                ...\n",
+       "22001            1  rt @ezlusztig: they took down the material on ...\n",
+       "17856            2  rt @washingtonpost: how climate change could b...\n",
+       "384248           0  notiven: rt: nytimesworld :what does trump act...\n",
+       "819732          -1  rt @sara8smiles: hey liberals the climate chan...\n",
+       "806319           0  rt @chet_cannon: .@kurteichenwald's 'climate c...\n",
+       "\n",
+       "[15819 rows x 2 columns]"
       ]
      },
-     "execution_count": 11,
+     "execution_count": 12,
      "metadata": {},
      "output_type": "execute_result"
     }
@@ -878,58 +934,42 @@
     "df_train.drop(blanks, inplace=True)\n",
     "\n",
     "#lower case all words to remove noise from Capital words. Capital words may be seen as different from lower case words\n",
-    "df_train = df_train['message'].str.lower()\n",
+    "df_train['message'] = df_train['message'].str.lower()\n",
     "df_train"
    ]
   },
   {
    "cell_type": "code",
-   "execution_count": 12,
+   "execution_count": 13,
    "metadata": {},
    "outputs": [],
-
    "source": [
-    "def data_cleaning(text):\n",
+    "def data_cleaning(df):\n",
     "    #substring\n",
     "    \n",
-    "    text = re.sub(r'https\\S+','',text) #removing urls\n",
-    "    text = re.sub(r'&amp;','and',text)#replace & with and\n",
-    "    text = re.sub(r'rt','retweet',text) #replace 'rt' with retweet\n",
-    "    text = text.translate(str.maketrans('', '', string.punctuation)) #removing punctuations\n",
+    "    #drop missing texts\n",
+    "    df.dropna(inplace = True)\n",
     "\n",
+    "    #dropping empty tweets\n",
+    "    blanks = []  # start with an empty list\n",
+    "    for i,lb,tweet in df.itertuples():  # iterate over the DataFrame\n",
+    "        if type(tweet)==str:            # avoid NaN values\n",
+    "            if tweet.isspace():         # test 'tweet' for whitespace\n",
+    "                blanks.append(i)     # add matching index numbers to the list\n",
+    "    df.drop(blanks, inplace=True)\n",
+    "\n",
+    "    #lower case all words to remove noise from Capital words. Capital words may be seen as different from lower case words\n",
+    "    df['message'] = df['message'].str.lower()\n",
+    "    \n",
+    "    df['message'] = df['message'].replace(r'&amp;', 'and', regex=True) #replace & with and\n",
+    "    df['message'] = df['message'].replace(r'https\\S+','', regex=True).replace(r'www\\S+', '', regex=True) #removing urls\n",
+    "    df['message'] = df['message'].str.replace('rt','retweet') #replace 'rt' with retweet\n",
+    "    df['message'] = df['message'].str.replace('[^\\w\\s]','') #removing punctuations\n",
+    "\n",
+    "    # remove duplicate tweets\n",
+    "    df_train.drop_duplicates(subset=['message'],keep = 'first',inplace = True)\n",
+    "    \n",
     "    return df"
-   ]
-
-   "source": []
-
-  },
-  {
-   "cell_type": "code",
-   "execution_count": 22,
-   "metadata": {},
-   "outputs": [
-    {
-     "ename": "KeyError",
-     "evalue": "'message'",
-     "output_type": "error",
-     "traceback": [
-      "\u001b[1;31m---------------------------------------------------------------------------\u001b[0m",
-      "\u001b[1;31mKeyError\u001b[0m                                  Traceback (most recent call last)",
-      "\u001b[1;32m<ipython-input-22-54b247e2e78e>\u001b[0m in \u001b[0;36m<module>\u001b[1;34m\u001b[0m\n\u001b[0;32m      1\u001b[0m \u001b[1;31m# df = df_train.copy()\u001b[0m\u001b[1;33m\u001b[0m\u001b[1;33m\u001b[0m\u001b[1;33m\u001b[0m\u001b[0m\n\u001b[0;32m      2\u001b[0m \u001b[1;31m# df['message'] = df['message'].replace(r'&amp;', 'and', regex=True)\u001b[0m\u001b[1;33m\u001b[0m\u001b[1;33m\u001b[0m\u001b[1;33m\u001b[0m\u001b[0m\n\u001b[1;32m----> 3\u001b[1;33m \u001b[0mdf_train\u001b[0m\u001b[1;33m[\u001b[0m\u001b[1;34m'message'\u001b[0m\u001b[1;33m]\u001b[0m\u001b[1;33m\u001b[0m\u001b[1;33m\u001b[0m\u001b[0m\n\u001b[0m",
-      "\u001b[1;32mC:\\ProgramData\\Anaconda3\\lib\\site-packages\\pandas\\core\\series.py\u001b[0m in \u001b[0;36m__getitem__\u001b[1;34m(self, key)\u001b[0m\n\u001b[0;32m    869\u001b[0m         \u001b[0mkey\u001b[0m \u001b[1;33m=\u001b[0m \u001b[0mcom\u001b[0m\u001b[1;33m.\u001b[0m\u001b[0mapply_if_callable\u001b[0m\u001b[1;33m(\u001b[0m\u001b[0mkey\u001b[0m\u001b[1;33m,\u001b[0m \u001b[0mself\u001b[0m\u001b[1;33m)\u001b[0m\u001b[1;33m\u001b[0m\u001b[1;33m\u001b[0m\u001b[0m\n\u001b[0;32m    870\u001b[0m         \u001b[1;32mtry\u001b[0m\u001b[1;33m:\u001b[0m\u001b[1;33m\u001b[0m\u001b[1;33m\u001b[0m\u001b[0m\n\u001b[1;32m--> 871\u001b[1;33m             \u001b[0mresult\u001b[0m \u001b[1;33m=\u001b[0m \u001b[0mself\u001b[0m\u001b[1;33m.\u001b[0m\u001b[0mindex\u001b[0m\u001b[1;33m.\u001b[0m\u001b[0mget_value\u001b[0m\u001b[1;33m(\u001b[0m\u001b[0mself\u001b[0m\u001b[1;33m,\u001b[0m \u001b[0mkey\u001b[0m\u001b[1;33m)\u001b[0m\u001b[1;33m\u001b[0m\u001b[1;33m\u001b[0m\u001b[0m\n\u001b[0m\u001b[0;32m    872\u001b[0m \u001b[1;33m\u001b[0m\u001b[0m\n\u001b[0;32m    873\u001b[0m             \u001b[1;32mif\u001b[0m \u001b[1;32mnot\u001b[0m \u001b[0mis_scalar\u001b[0m\u001b[1;33m(\u001b[0m\u001b[0mresult\u001b[0m\u001b[1;33m)\u001b[0m\u001b[1;33m:\u001b[0m\u001b[1;33m\u001b[0m\u001b[1;33m\u001b[0m\u001b[0m\n",
-      "\u001b[1;32mC:\\ProgramData\\Anaconda3\\lib\\site-packages\\pandas\\core\\indexes\\base.py\u001b[0m in \u001b[0;36mget_value\u001b[1;34m(self, series, key)\u001b[0m\n\u001b[0;32m   4403\u001b[0m         \u001b[0mk\u001b[0m \u001b[1;33m=\u001b[0m \u001b[0mself\u001b[0m\u001b[1;33m.\u001b[0m\u001b[0m_convert_scalar_indexer\u001b[0m\u001b[1;33m(\u001b[0m\u001b[0mk\u001b[0m\u001b[1;33m,\u001b[0m \u001b[0mkind\u001b[0m\u001b[1;33m=\u001b[0m\u001b[1;34m\"getitem\"\u001b[0m\u001b[1;33m)\u001b[0m\u001b[1;33m\u001b[0m\u001b[1;33m\u001b[0m\u001b[0m\n\u001b[0;32m   4404\u001b[0m         \u001b[1;32mtry\u001b[0m\u001b[1;33m:\u001b[0m\u001b[1;33m\u001b[0m\u001b[1;33m\u001b[0m\u001b[0m\n\u001b[1;32m-> 4405\u001b[1;33m             \u001b[1;32mreturn\u001b[0m \u001b[0mself\u001b[0m\u001b[1;33m.\u001b[0m\u001b[0m_engine\u001b[0m\u001b[1;33m.\u001b[0m\u001b[0mget_value\u001b[0m\u001b[1;33m(\u001b[0m\u001b[0ms\u001b[0m\u001b[1;33m,\u001b[0m \u001b[0mk\u001b[0m\u001b[1;33m,\u001b[0m \u001b[0mtz\u001b[0m\u001b[1;33m=\u001b[0m\u001b[0mgetattr\u001b[0m\u001b[1;33m(\u001b[0m\u001b[0mseries\u001b[0m\u001b[1;33m.\u001b[0m\u001b[0mdtype\u001b[0m\u001b[1;33m,\u001b[0m \u001b[1;34m\"tz\"\u001b[0m\u001b[1;33m,\u001b[0m \u001b[1;32mNone\u001b[0m\u001b[1;33m)\u001b[0m\u001b[1;33m)\u001b[0m\u001b[1;33m\u001b[0m\u001b[1;33m\u001b[0m\u001b[0m\n\u001b[0m\u001b[0;32m   4406\u001b[0m         \u001b[1;32mexcept\u001b[0m \u001b[0mKeyError\u001b[0m \u001b[1;32mas\u001b[0m \u001b[0me1\u001b[0m\u001b[1;33m:\u001b[0m\u001b[1;33m\u001b[0m\u001b[1;33m\u001b[0m\u001b[0m\n\u001b[0;32m   4407\u001b[0m             \u001b[1;32mif\u001b[0m \u001b[0mlen\u001b[0m\u001b[1;33m(\u001b[0m\u001b[0mself\u001b[0m\u001b[1;33m)\u001b[0m \u001b[1;33m>\u001b[0m \u001b[1;36m0\u001b[0m \u001b[1;32mand\u001b[0m \u001b[1;33m(\u001b[0m\u001b[0mself\u001b[0m\u001b[1;33m.\u001b[0m\u001b[0mholds_integer\u001b[0m\u001b[1;33m(\u001b[0m\u001b[1;33m)\u001b[0m \u001b[1;32mor\u001b[0m \u001b[0mself\u001b[0m\u001b[1;33m.\u001b[0m\u001b[0mis_boolean\u001b[0m\u001b[1;33m(\u001b[0m\u001b[1;33m)\u001b[0m\u001b[1;33m)\u001b[0m\u001b[1;33m:\u001b[0m\u001b[1;33m\u001b[0m\u001b[1;33m\u001b[0m\u001b[0m\n",
-      "\u001b[1;32mpandas\\_libs\\index.pyx\u001b[0m in \u001b[0;36mpandas._libs.index.IndexEngine.get_value\u001b[1;34m()\u001b[0m\n",
-      "\u001b[1;32mpandas\\_libs\\index.pyx\u001b[0m in \u001b[0;36mpandas._libs.index.IndexEngine.get_value\u001b[1;34m()\u001b[0m\n",
-      "\u001b[1;32mpandas\\_libs\\index.pyx\u001b[0m in \u001b[0;36mpandas._libs.index.IndexEngine.get_loc\u001b[1;34m()\u001b[0m\n",
-      "\u001b[1;32mpandas\\_libs\\index_class_helper.pxi\u001b[0m in \u001b[0;36mpandas._libs.index.Int64Engine._check_type\u001b[1;34m()\u001b[0m\n",
-      "\u001b[1;31mKeyError\u001b[0m: 'message'"
-     ]
-    }
-   ],
-   "source": [
-    "# df = df_train.copy()\n",
-    "# df['message'] = df['message'].replace(r'&amp;', 'and', regex=True)\n",
-    "df_train['message']"
    ]
   },
   {
@@ -938,9 +978,15 @@
    "metadata": {},
    "outputs": [],
    "source": [
-    "# remove duplicate tweets\n",
-    "df_train['message'] = df_train['message'].drop_duplicates(subset=['message'])"
+    "df_train"
    ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": []
   },
   {
    "cell_type": "markdown",
@@ -985,13 +1031,9 @@
    "metadata": {},
    "outputs": [],
    "source": [
-
     "#### clean_message = the cleaned text data ####\n",
     "y = train_df['sentiment']\n",
     "X = train_df['clean_message']\n"
-
-    "# X and y\n"
-
    ]
   },
   {
@@ -1007,11 +1049,7 @@
    "metadata": {},
    "outputs": [],
    "source": [
-
     "X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)\n"
-
-    "# training and testing split\n"
-
    ]
   },
   {
@@ -1037,7 +1075,6 @@
    "execution_count": null,
    "metadata": {},
    "outputs": [],
-
    "source": [
     "# Write class that has object that tokenizes text data AND stems the tokens\n",
     "class StemAndTokenize:\n",
@@ -1148,25 +1185,18 @@
    "source": [
     "#### Neural Networks"
    ]
-
-   "source": []
-
   },
   {
    "cell_type": "code",
    "execution_count": null,
    "metadata": {},
    "outputs": [],
-
    "source": [
     "# Create pipeline for Neural Networks:\n",
     "nn = Pipeline([('tfidf', TfidfVectorizer(tokenizer=StemAndTokenize())),\n",
     "               ('nn', MLPClassifier())\n",
     "              ])\n"
    ]
-
-   "source": []
-
   },
   {
    "cell_type": "markdown",
@@ -1206,7 +1236,6 @@
    ]
   },
   {
-
    "cell_type": "markdown",
    "metadata": {},
    "source": [
@@ -1265,13 +1294,11 @@
    ]
   },
   {
-
    "cell_type": "code",
    "execution_count": null,
    "metadata": {},
    "outputs": [],
    "source": [
-
     "# Fitting the Random Forest model\n",
     "rf.fit(X_train, y_train)\n"
    ]
@@ -1281,9 +1308,6 @@
    "metadata": {},
    "source": [
     "#### KNN (K Nearest Neighbors)"
-
-    "# (logistic reg, SVM, Naive Bayes, KNN, Random Forest, Neural Nets)\n"
-
    ]
   },
   {
@@ -1291,7 +1315,6 @@
    "execution_count": null,
    "metadata": {},
    "outputs": [],
-
    "source": [
     "# Fitting the KNN model\n",
     "knn.fit(X_train, y_train)\n"
@@ -1303,23 +1326,16 @@
    "source": [
     "#### Neural Networks"
    ]
-
-   "source": []
-
   },
   {
    "cell_type": "code",
    "execution_count": null,
    "metadata": {},
    "outputs": [],
-
    "source": [
     "# Fitting the Neural Networks model\n",
     "nn.fit(X_train, y_train)\n"
    ]
-
-   "source": []
-
   },
   {
    "cell_type": "markdown",
