@@ -13,7 +13,7 @@ class StemAndTokenize:
         return [self.ss.stem(t) for t in word_tokenize(doc)]
 
 # Load your raw data
-raw = pd.read_csv(r"C:\Users\Nkululeko\Documents\GitHub\classification-predict-streamlit-template\resources\train.csv")
+raw = pd.read_csv('https://raw.githubusercontent.com/Amogelang20/RM1_classification_predict/dev/train.csv')
 def main():
     
     #title and subheader 
