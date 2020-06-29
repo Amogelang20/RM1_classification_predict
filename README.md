@@ -32,25 +32,27 @@ This notebook illustrates the process taken to find a model that can predict use
  pip install pyspellchecker==0.5.4
  ```   
  
- = Ftfy:
+ - Ftfy:
  ```bash
  pip install ftfy==5.7
  ```   
  
- ## Libraries utilised in building the model:  
+ ### Libraries utilised in building the model:  
  
 import numpy, pandas, time, wordcloud, matplotlib.pyplot, seaborn, 
        PIL, re, nltk, sklearn, emoji, ftfy, spellchecker, itertools, pickle  
        
 ## Datasets used  
 
-+ train.csv - is the dataset that is used to train our model.  
+### train.csv - is the dataset that is used to train our model.  
  
+ ***
 **Variable definitions:**  
 
 - **tweetid** - Unique Twitter ID .
 - **message** - Tweet body.       
 - **sentiment** - Sentiment of tweet.  
+
 
 **Each tweet is then labeled as one of the following classes:**  
  
@@ -61,12 +63,14 @@ import numpy, pandas, time, wordcloud, matplotlib.pyplot, seaborn,
 |   **1**   | **Pro** |The tweet supports the belief of man-made climate change |
 |   **0**   | **Neutral** |The tweet neither supports nor refutes the belief of man-made climate change |
 |  **-1**   | **Anti** |The tweet does not believe in man-made climate change | 
+***
 
+### test.csv - is the dataset on which we applied our model to.  
 
-+ test.csv - is the dataset on which we applied our model to.  
 During testing we do not have access to the **tweetid** variable, but the testing dataset remains the same as the training dataset otherwise
+  ***  
   
- # Details
+ ## Details
 
 Once libraries and datasets are imported, the learning process begins:  
 + Data description    
@@ -80,10 +84,10 @@ Once libraries and datasets are imported, the learning process begins:
 + Produce output
 + Conclusion
 
-# Contributions
+## Contributions
 Pull requests can be made. If changes to be made on the repository are major changes, one can contact the owners for permission to go ahead.
 
-# License
+## License
 This project is licensed under the MIT License.
   
 ## Authors
